@@ -1,42 +1,28 @@
 @echo off 
 ::pin
 goto main
-echo ÇëÊäÈëPINÂë£º
+echo è¯·è¾“å…¥PINç ï¼š
 set /p pw0=
-::if "%pw0%"=="8128" (cls & goto main) else (cls & echo PINÂë´íÎó)
+::if "%pw0%"=="8128" (cls & goto main) else (cls & echo PINç é”™è¯¯)
 ::goto pin 
 :main 
 cls
-::echo ©³©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©·
-::echo ©§©³©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©·©§
-::echo ©§©§   0 ÍË³ö           ©§©§
-::echo ©§©§   1 ×ÀÃæ±¸·Ý       ©§©§
-::echo ©§©§   2 ¶¨Ê±¹Ø»ú       ©§©§
-::echo ©§©§   3 ¶¨Ê±ÖØÆô       ©§©§
-::echo ©§©§   4 È¡Ïû¹Ø»ú¶¨Ê±   ©§©§
-::echo ©§©§   6 Ô´´úÂë         ©§©§
-::echo ©§©§   7 ²âÊÔÖÐ         ©§©§
-::echo ©§©§   8 Win10±ÚÖ½      ©§©§
-::echo ©§©§   9 ÁÙÊ±±¸·Ý       ©§©§
-::echo ©§©§   A ½¨ÉèÖÐ         ©§©§
-::echo ©§©»©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¿©§
-::echo ©»©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¿
 echo #######################
-echo #    0 ÍË³ö           #
-echo #    1 ×ÀÃæ±¸·Ý       #
-echo #    2 ¶¨Ê±¹Ø»ú       #
-echo #    3 ¶¨Ê±ÖØÆô       #
-echo #    4 È¡Ïû¹Ø»ú¶¨Ê±   #
-echo #    5 Á¢¼´ÖØÆô       #
-echo #    6 Ô´´úÂë         #
-echo #    7 ²âÊÔÖÐ¡£¡£¡£   #
-echo #    8 Win10±ÚÖ½      #
-echo #    9 ÁÙÊ±±¸·Ý       #
-echo #    A ½¨ÉèÖÐ¡£¡£¡£   #
+echo #    0 é€€å‡º           #
+echo #    1 æ¡Œé¢å¤‡ä»½       #
+echo #    2 å®šæ—¶å…³æœº       #
+echo #    3 å®šæ—¶é‡å¯       #
+echo #    4 å–æ¶ˆå…³æœºå®šæ—¶   #
+echo #    5 ç«‹å³é‡å¯       #
+echo #    6 æºä»£ç          #
+echo #    7 æµ‹è¯•ä¸­ã€‚ã€‚ã€‚   #
+echo #    8 Win10å£çº¸      #
+echo #    9 ä¸´æ—¶å¤‡ä»½       #
+echo #    A å»ºè®¾ä¸­ã€‚ã€‚ã€‚   #
 echo #######################
 echo copyright@ Bruce Wangne
 echo mail:qi.wang@outlook.ie
-set /p input=ÇëÊäÈë´úÂë£º 
+set /p input=è¯·è¾“å…¥ä»£ç ï¼š 
 if "%input%"=="0" goto exit 
 if "%input%"=="1" goto backup 
 if "%input%"=="2" goto shut_down 
@@ -61,24 +47,24 @@ pause
 exit 
 
 :clear
-echo ÕýÔÚ½øÈëÖ÷Ñ¡µ¥
+echo æ­£åœ¨è¿›å…¥ä¸»é€‰å•
 cls
 goto main
 
 :submain
 cls
 echo #######################
-echo ##   ¶¨Ê±²Ëµ¥¼¯ºÏ    ##
+echo ##   å®šæ—¶èœå•é›†åˆ    ##
 echo #######################
-echo #    0 ·µ»Ø           #
-echo #    1 ¶¨Ê±¹Ø»ú       #
-echo #    2 ¶¨Ê±ÖØÆô       #
-echo #    3 È¡Ïû¹Ø»ú¶¨Ê±   #
-echo #    4 Á¢¼´ÖØÆô       #
+echo #    0 è¿”å›ž           #
+echo #    1 å®šæ—¶å…³æœº       #
+echo #    2 å®šæ—¶é‡å¯       #
+echo #    3 å–æ¶ˆå…³æœºå®šæ—¶   #
+echo #    4 ç«‹å³é‡å¯       #
 echo #######################
 echo copyright@ Bruce Wangne
 echo mail:qi.wang@outlook.ie
-set /p input=ÇëÊäÈë´úÂë£º 
+set /p input=è¯·è¾“å…¥ä»£ç ï¼š 
 if "%input%"=="0" goto main 
 if "%input%"=="1" goto 2 
 if "%input%"=="2" goto 3 
@@ -96,16 +82,16 @@ exit
 
 :exit
 cls
-echo ¸ÐÐ»Ê¹ÓÃ
+echo æ„Ÿè°¢ä½¿ç”¨
 ::pause
 exit
 
 :backup
-::echo ÇëÊäÈë±¸·ÝÃÜÂë£¨CODE I£©
+::echo è¯·è¾“å…¥å¤‡ä»½å¯†ç ï¼ˆCODE Iï¼‰
 ::set /p code=
-::if "%code%"=="back" (cls & echo ·µ»ØÖ÷Ñ¡µ¥ & goto clear) 
-::if "%code%"=="t6v5csu3" (cls & echo ÃÜÂëÕýÈ·) else (cls & echo ÃÜÂë´íÎó£¬ÇëÖØÊÔ ·µ»ØÇëÊäÈë¡°back¡±  & goto 1) 
-echo ÕýÔÚ¿ªÊ¼×ÀÃæ±¸·Ý
+::if "%code%"=="back" (cls & echo è¿”å›žä¸»é€‰å• & goto clear) 
+::if "%code%"=="t6v5csu3" (cls & echo å¯†ç æ­£ç¡®) else (cls & echo å¯†ç é”™è¯¯ï¼Œè¯·é‡è¯• è¿”å›žè¯·è¾“å…¥â€œbackâ€  & goto 1) 
+echo æ­£åœ¨å¼€å§‹æ¡Œé¢å¤‡ä»½
 pause
 rd/s/q D:\Backup\Desktop%date:~2,2%.%date:~5,2%.%date:~8,2%\
 ::rd/s/q H:\Backup\Desktop%date:~2,2%.%date:~5,2%.%date:~8,2%\
@@ -128,38 +114,38 @@ pause
 exit 
 
 :shut_down
-::echo ÇëÊäÈëÃÜÂë
+::echo è¯·è¾“å…¥å¯†ç 
 ::set /p pw=
-::if "%pw%"=="back" (cls & echo ·µ»ØÖ÷Ñ¡µ¥ & goto clear) 
-::if "%pw%"=="bruce" (echo ÃÜÂëÕýÈ·) else (cls & echo ÃÜÂë´íÎó£¬ÇëÖØÊÔ ·µ»ØÇëÊäÈë¡°back¡±  & goto 2)
-echo ÇëÊäÈë¶¨Ê±¹Ø»úµ¹¼ÆÊ±Ê±¼ä£¨ÕûÊýÐ¡Ê±£© 
+::if "%pw%"=="back" (cls & echo è¿”å›žä¸»é€‰å• & goto clear) 
+::if "%pw%"=="bruce" (echo å¯†ç æ­£ç¡®) else (cls & echo å¯†ç é”™è¯¯ï¼Œè¯·é‡è¯• è¿”å›žè¯·è¾“å…¥â€œbackâ€  & goto 2)
+echo è¯·è¾“å…¥å®šæ—¶å…³æœºå€’è®¡æ—¶æ—¶é—´ï¼ˆæ•´æ•°å°æ—¶ï¼‰ 
 set /p hours=
 set /a time=%hours%*3600
-echo "%hours%"Ð¡Ê±ºó¹Ø»ú
+echo "%hours%"å°æ—¶åŽå…³æœº
 shutdown -s -t %time%
-echo È¡ÏûÇëÊäÈëc
+echo å–æ¶ˆè¯·è¾“å…¥c
 set /p can=
 if "%can%"=="c" goto 4 
-echo ¹Ø»úÎ´È¡Ïû
+echo å…³æœºæœªå–æ¶ˆ
 pause
 goto main
 pause 
 exit 
 
 :re_boot 
-::echo ÇëÊäÈëÃÜÂë
+::echo è¯·è¾“å…¥å¯†ç 
 ::set /p pw=
-::if "%pw%"=="back" (cls & echo ·µ»ØÖ÷Ñ¡µ¥ & goto clear) 
-::if "%pw%"=="bruce" (echo ÃÜÂëÕýÈ·) else (cls & echo ÃÜÂë´íÎó£¬ÇëÖØÊÔ ·µ»ØÇëÊäÈë¡°back¡±  & goto 3)
-echo ÇëÊäÈë¶¨Ê±ÖØÆôµ¹¼ÆÊ±Ê±¼ä£¨ÕûÊýÐ¡Ê±£© 
+::if "%pw%"=="back" (cls & echo è¿”å›žä¸»é€‰å• & goto clear) 
+::if "%pw%"=="bruce" (echo å¯†ç æ­£ç¡®) else (cls & echo å¯†ç é”™è¯¯ï¼Œè¯·é‡è¯• è¿”å›žè¯·è¾“å…¥â€œbackâ€  & goto 3)
+echo è¯·è¾“å…¥å®šæ—¶é‡å¯å€’è®¡æ—¶æ—¶é—´ï¼ˆæ•´æ•°å°æ—¶ï¼‰ 
 set /p hours=
 set /a time=%hours%*3600
-echo "%hours%"Ð¡Ê±ºóÖØÆô
+echo "%hours%"å°æ—¶åŽé‡å¯
 shutdown -r -t %time%
-echo È¡ÏûÇëÊäÈëc
+echo å–æ¶ˆè¯·è¾“å…¥c
 set /p can=
 if "%can%"=="c" goto 4 
-echo ÖØÆôÎ´È¡Ïû
+echo é‡å¯æœªå–æ¶ˆ
 pause
 goto main
 pause 
@@ -169,7 +155,7 @@ exit
 :cancel
 cls
 shutdown -a
-echo ÒÑÈ¡Ïû¹Ø»ú»òÖØÆô¼Æ»®£¡
+echo å·²å–æ¶ˆå…³æœºæˆ–é‡å¯è®¡åˆ’ï¼
 pause 
 cls
 goto main
@@ -177,15 +163,15 @@ exit
 
 :kidding 
 cls
-echo ÇëÊäÈëÃÜÂë
+echo è¯·è¾“å…¥å¯†ç 
 set /p scan=
 echo r u sure
 pause 
-echo ËãÁË£¬·´ÕýÎÒÒ²²»»á¸øÄã·´»ÚµÄ»ú»áÁË£¬À²À²À²£¡£¡£¡
+echo ç®—äº†ï¼Œåæ­£æˆ‘ä¹Ÿä¸ä¼šç»™ä½ åæ‚”çš„æœºä¼šäº†ï¼Œå•¦å•¦å•¦ï¼ï¼ï¼
 pause 
-echo ¹þ¹þ£¡Æ­ÄãµÄ£¡
+echo å“ˆå“ˆï¼éª—ä½ çš„ï¼
 pause 
-echo ÄãÒÔÎªÎÒ»á°ÑÁ¢¼´ÖØÆô·ÅÔÚÕâÃ´Ã÷ÏÔµÄÎ»ÖÃÃ´£¿ÓÞ´ÀµÄÈËÀà£¡
+echo ä½ ä»¥ä¸ºæˆ‘ä¼šæŠŠç«‹å³é‡å¯æ”¾åœ¨è¿™ä¹ˆæ˜Žæ˜¾çš„ä½ç½®ä¹ˆï¼Ÿæ„šè ¢çš„äººç±»ï¼
 pause 
 cls
 goto main
@@ -216,7 +202,7 @@ for /r  D:\Bing_pho\%date:~2,2%.%date:~5,2%.%date:~8,2%\ %%i in (*.*) do (
 cd D:\Bing_pho\%date:~2,2%.%date:~5,2%.%date:~8,2%\
 pause
 cls
-echo ±ØÓ¦¾Û½¹ËøÆÁ±ÚÖ½ÒÑ±£´æÍê±Ï£¬ÇëÊÖ¶¯É¾³ý¸ÉÈÅÏîÔÙ´ÎÔËÐÐ³ÌÐò£¡
+echo å¿…åº”èšç„¦é”å±å£çº¸å·²ä¿å­˜å®Œæ¯•ï¼Œè¯·æ‰‹åŠ¨åˆ é™¤å¹²æ‰°é¡¹å†æ¬¡è¿è¡Œç¨‹åºï¼
 pause
 cls
 goto main
@@ -244,7 +230,7 @@ exit
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :temp_bkup
-echo ÕýÔÚ¿ªÊ¼ÁÙÊ±±¸·Ý
+echo æ­£åœ¨å¼€å§‹ä¸´æ—¶å¤‡ä»½
 pause
 rd/s/q "E:\360 Cloud Drive\BT Download\Temp_Backup\"
 ::pause
@@ -258,8 +244,8 @@ goto main
 
 :alpha
 cls
-echo ½¨ÉèÖÐ¡£¡£¡£
-echo ¾´ÇëÆÚ´ý 
+echo å»ºè®¾ä¸­ã€‚ã€‚ã€‚
+echo æ•¬è¯·æœŸå¾… 
 pause
 cls
 goto main
