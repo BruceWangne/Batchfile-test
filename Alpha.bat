@@ -90,7 +90,6 @@ exit
 ::echo 请输入备份密码（CODE I）
 ::set /p code=
 ::if "%code%"=="back" (cls & echo 返回主选单 & goto clear) 
-::if "%code%"=="t6v5csu3" (cls & echo 密码正确) else (cls & echo 密码错误，请重试 返回请输入“back”  & goto 1) 
 echo 正在开始桌面备份
 pause
 rd/s/q D:\Backup\Desktop%date:~2,2%.%date:~5,2%.%date:~8,2%\
