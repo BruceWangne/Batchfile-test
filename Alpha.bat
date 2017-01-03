@@ -1,105 +1,118 @@
-@echo off 
+@echo off
+title ÃüÁîÌáÊ¾·û Edit by Bruce Wangne
 ::pin
+goto bravo
 goto main
-echo è¯·è¾“å…¥PINç ï¼š
+echo ÇëÊäÈëPINÂë£º
 set /p pw0=
-::if "%pw0%"=="8128" (cls & goto main) else (cls & echo PINç é”™è¯¯)
+::if "%pw0%"=="8128" (cls & goto main) else (cls & echo PINÂë´íÎó)
 ::goto pin 
 :main 
 cls
+::echo ©³©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©·
+::echo ©§©³©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©·©§
+::echo ©§©§                    ©§©§
+::echo ©§©»©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¿©§
+::echo ©»©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¿
 echo #######################
-echo #    0 é€€å‡º           #
-echo #    1 æ¡Œé¢å¤‡ä»½       #
-echo #    2 å®šæ—¶å…³æœº       #
-echo #    3 å®šæ—¶é‡å¯       #
-echo #    4 å–æ¶ˆå…³æœºå®šæ—¶   #
-echo #    5 ç«‹å³é‡å¯       #
-echo #    6 æºä»£ç          #
-echo #    7 æµ‹è¯•ä¸­ã€‚ã€‚ã€‚   #
-echo #    8 Win10å£çº¸      #
-echo #    9 ä¸´æ—¶å¤‡ä»½       #
-echo #    A å»ºè®¾ä¸­ã€‚ã€‚ã€‚   #
+echo #    0 ÍË³ö           #
+echo #    1 ×ÀÃæ±¸·İ       #
+echo #    2 ¶¨Ê±²Ëµ¥       #
+echo #    3 È¡Ïû¹Ø»ú¶¨Ê±   #
+echo #    4 Á¢¼´ÖØÆô       #
+echo #    5 Ô´´úÂë         #
+echo #    6 showing off    #
+echo #    7 Win10±ÚÖ½      #
+echo #    8 ÁÙÊ±±¸·İ       #
+echo #    9 ÖØÆô×ÊÔ´¹ÜÀíÆ÷ #
+echo #    a CMD            #
+echo #    b Æô¶¯Ó¦ÓÃ³ÌĞò   #
 echo #######################
 echo copyright@ Bruce Wangne
 echo mail:qi.wang@outlook.ie
-set /p input=è¯·è¾“å…¥ä»£ç ï¼š 
+set /p input=ÇëÊäÈë´úÂë£º 
 if "%input%"=="0" goto exit 
 if "%input%"=="1" goto backup 
-if "%input%"=="2" goto shut_down 
-if "%input%"=="3" goto re_boot 
-if "%input%"=="4" goto cancel 
-if "%input%"=="5" goto kidding
-if "%input%"=="6" goto code
-if "%input%"=="7" goto submain
-if "%input%"=="8" goto bing
-if "%input%"=="9" goto temp_bkup
-if "%input%"=="a" goto alpha
+if "%input%"=="2" goto schedule 
+if "%input%"=="3" goto cancel 
+if "%input%"=="4" goto kidding
+if "%input%"=="5" goto code
+if "%input%"=="6" goto bravo
+if "%input%"=="7" goto bing
+if "%input%"=="8" goto temp_bkup
+if "%input%"=="9" goto exprb
+if "%input%"=="order" goto order
+if "%input%"=="od" goto order
+if "%input%"=="exprb" goto exprb
+if "%input%"=="hell" goto taskmgr
+if "%input%"=="tkrb" goto taskmgr
+if "%input%"=="a" cmd
+if "%input%"=="b" goto prgm
+if "%input%"=="cmd" cmd
+if "%input%"=="CMD" cmd
 if "%input%"=="reboot" shutdown -r -t 0
 if "%input%"=="rb" shutdown -r -t 0
 if "%input%"=="shutdown" shutdown -s -t 0
 if "%input%"=="sd" shutdown -s -t 0
-if "%input%"=="order" goto order
-if "%input%"=="od" goto order
-::if "%input%"=="6" (goto 6) else goto main
+if "%input%"=="utkl" taskkill /f /im uTorrent.exe 
+if "%input%"=="ut" start "" "E:\360 Cloud Drive\BT Download\SHU-BT Download\utorrent\uTorrent.exe"
+if "%input%"=="cls" (cls & goto bravo)
 cls
-goto main
-pause 
-exit 
+goto main 
 
 :clear
-echo æ­£åœ¨è¿›å…¥ä¸»é€‰å•
+echo ÕıÔÚ½øÈëÖ÷Ñ¡µ¥
 cls
 goto main
 
-:submain
+:schedule
 cls
 echo #######################
-echo ##   å®šæ—¶èœå•é›†åˆ    ##
+echo ##   ¶¨Ê±²Ëµ¥¼¯ºÏ    ##
 echo #######################
-echo #    0 è¿”å›           #
-echo #    1 å®šæ—¶å…³æœº       #
-echo #    2 å®šæ—¶é‡å¯       #
-echo #    3 å–æ¶ˆå…³æœºå®šæ—¶   #
-echo #    4 ç«‹å³é‡å¯       #
+echo #    0 ·µ»Ø           #
+echo #    1 ¶¨Ê±¹Ø»ú       #
+echo #    2 ¶¨Ê±ÖØÆô       #
+echo #    3 È¡Ïû¹Ø»ú¶¨Ê±   #
+echo #    4 Á¢¼´ÖØÆô       #
 echo #######################
 echo copyright@ Bruce Wangne
 echo mail:qi.wang@outlook.ie
-set /p input=è¯·è¾“å…¥ä»£ç ï¼š 
+set /p input=ÇëÊäÈë´úÂë£º 
 if "%input%"=="0" goto main 
-if "%input%"=="1" goto 2 
-if "%input%"=="2" goto 3 
-if "%input%"=="3" goto 4 
-if "%input%"=="4" goto 5 
+if "%input%"=="1" goto shut_down 
+if "%input%"=="2" goto re_boot
+if "%input%"=="3" goto cancel
+if "%input%"=="4" goto kidding
 if "%input%"=="reboot" shutdown -r -t 0
 if "%input%"=="rb" shutdown -r -t 0
 if "%input%"=="shutdown" shutdown -s -t 0
 if "%input%"=="sd" shutdown -s -t 0
-if "%input%"=="advanced" goto mainp
-::if "%input%"=="6" (goto 6) else goto main
 goto submain
 pause 
 exit 
 
 :exit
 cls
-echo æ„Ÿè°¢ä½¿ç”¨
+echo ¸ĞĞ»Ê¹ÓÃ
 ::pause
 exit
 
 :backup
-::echo è¯·è¾“å…¥å¤‡ä»½å¯†ç ï¼ˆCODE Iï¼‰
+::echo ÇëÊäÈë±¸·İÃÜÂë£¨CODE I£©
 ::set /p code=
-::if "%code%"=="back" (cls & echo è¿”å›ä¸»é€‰å• & goto clear) 
-echo æ­£åœ¨å¼€å§‹æ¡Œé¢å¤‡ä»½
+::if "%code%"=="back" (cls & echo ·µ»ØÖ÷Ñ¡µ¥ & goto clear) 
+::if "%code%"=="8128" (cls & echo ÃÜÂëÕıÈ·) else (cls & echo ÃÜÂë´íÎó£¬ÇëÖØÊÔ ·µ»ØÇëÊäÈë¡°back¡±  & goto 1) 
+echo ÕıÔÚ¿ªÊ¼×ÀÃæ±¸·İ
 pause
-rd/s/q D:\Backup\Desktop%date:~2,2%.%date:~5,2%.%date:~8,2%\
+::rd/s/q D:\Backup\Desktop%date:~2,2%.%date:~5,2%.%date:~8,2%\
 ::rd/s/q H:\Backup\Desktop%date:~2,2%.%date:~5,2%.%date:~8,2%\
 rd/s/q "E:\360 Cloud Drive\BT Download\Backup\Desktop%date:~2,2%.%date:~5,2%.%date:~8,2%\"
 rd/s/q "E:\360 Cloud Drive\BT Download\Data Backup\Data%date:~2,2%.%date:~5,2%.%date:~8,2%\"
 ::rd/s/q E:\360~1\BT~1\Backup\Desktop%date:~2,2%.%date:~5,2%.%date:~8,2%\/e
 ::pause
 ::Xcopy C:\Users\Bruce\Desktop D:\Backup\Desktop%date:~2,2%.%date:~5,2%.%date:~8,2%\/e
-Xcopy %~d0 D:\Backup\Desktop%date:~2,2%.%date:~5,2%.%date:~8,2%\/e
+::Xcopy %~d0 D:\Backup\Desktop%date:~2,2%.%date:~5,2%.%date:~8,2%\/e
 Xcopy %~d0 H:\Backup\Desktop%date:~2,2%.%date:~5,2%.%date:~8,2%\/e
 Xcopy %~d0 "F:\Cloud Backup\Backup\Desktop%date:~2,2%.%date:~5,2%.%date:~8,2%\"/e
 Xcopy %~d0 "E:\360 Cloud Drive\BT Download\Backup\Desktop%date:~2,2%.%date:~5,2%.%date:~8,2%\"/e
@@ -108,53 +121,47 @@ Xcopy D:\*.dat "E:\360 Cloud Drive\BT Download\Data Backup\Data%date:~2,2%.%date
 Xcopy D:\Data "F:\Cloud Backup\Data Backup\Data%date:~2,2%.%date:~5,2%.%date:~8,2%\"/e
 Xcopy D:\*.dat "F:\Cloud Backup\Data Backup\Data%date:~2,2%.%date:~5,2%.%date:~8,2%\DBackup%date:~2,2%.%date:~5,2%.%date:~8,2%\"
 pause
-goto main
-pause 
-exit 
+goto main 
 
 :shut_down
-::echo è¯·è¾“å…¥å¯†ç 
+::echo ÇëÊäÈëÃÜÂë
 ::set /p pw=
-::if "%pw%"=="back" (cls & echo è¿”å›ä¸»é€‰å• & goto clear) 
-::if "%pw%"=="bruce" (echo å¯†ç æ­£ç¡®) else (cls & echo å¯†ç é”™è¯¯ï¼Œè¯·é‡è¯• è¿”å›è¯·è¾“å…¥â€œbackâ€  & goto 2)
-echo è¯·è¾“å…¥å®šæ—¶å…³æœºå€’è®¡æ—¶æ—¶é—´ï¼ˆæ•´æ•°å°æ—¶ï¼‰ 
+::if "%pw%"=="back" (cls & echo ·µ»ØÖ÷Ñ¡µ¥ & goto clear) 
+::if "%pw%"=="bruce" (echo ÃÜÂëÕıÈ·) else (cls & echo ÃÜÂë´íÎó£¬ÇëÖØÊÔ ·µ»ØÇëÊäÈë¡°back¡±  & goto 2)
+echo ÇëÊäÈë¶¨Ê±¹Ø»úµ¹¼ÆÊ±Ê±¼ä£¨ÕûÊıĞ¡Ê±£© 
 set /p hours=
 set /a time=%hours%*3600
-echo "%hours%"å°æ—¶åå…³æœº
+echo "%hours%"Ğ¡Ê±ºó¹Ø»ú
 shutdown -s -t %time%
-echo å–æ¶ˆè¯·è¾“å…¥c
+echo È¡ÏûÇëÊäÈëc
 set /p can=
 if "%can%"=="c" goto 4 
-echo å…³æœºæœªå–æ¶ˆ
+echo ¹Ø»úÎ´È¡Ïû
 pause
-goto main
-pause 
-exit 
+goto main 
 
 :re_boot 
-::echo è¯·è¾“å…¥å¯†ç 
+::echo ÇëÊäÈëÃÜÂë
 ::set /p pw=
-::if "%pw%"=="back" (cls & echo è¿”å›ä¸»é€‰å• & goto clear) 
-::if "%pw%"=="bruce" (echo å¯†ç æ­£ç¡®) else (cls & echo å¯†ç é”™è¯¯ï¼Œè¯·é‡è¯• è¿”å›è¯·è¾“å…¥â€œbackâ€  & goto 3)
-echo è¯·è¾“å…¥å®šæ—¶é‡å¯å€’è®¡æ—¶æ—¶é—´ï¼ˆæ•´æ•°å°æ—¶ï¼‰ 
+::if "%pw%"=="back" (cls & echo ·µ»ØÖ÷Ñ¡µ¥ & goto clear) 
+::if "%pw%"=="bruce" (echo ÃÜÂëÕıÈ·) else (cls & echo ÃÜÂë´íÎó£¬ÇëÖØÊÔ ·µ»ØÇëÊäÈë¡°back¡±  & goto 3)
+echo ÇëÊäÈë¶¨Ê±ÖØÆôµ¹¼ÆÊ±Ê±¼ä£¨ÕûÊıĞ¡Ê±£© 
 set /p hours=
 set /a time=%hours%*3600
-echo "%hours%"å°æ—¶åé‡å¯
+echo "%hours%"Ğ¡Ê±ºóÖØÆô
 shutdown -r -t %time%
-echo å–æ¶ˆè¯·è¾“å…¥c
+echo È¡ÏûÇëÊäÈëc
 set /p can=
 if "%can%"=="c" goto 4 
-echo é‡å¯æœªå–æ¶ˆ
+echo ÖØÆôÎ´È¡Ïû
 pause
-goto main
-pause 
-exit 
+goto main 
  
 
 :cancel
 cls
 shutdown -a
-echo å·²å–æ¶ˆå…³æœºæˆ–é‡å¯è®¡åˆ’ï¼
+echo ÒÑÈ¡Ïû¹Ø»ú»òÖØÆô¼Æ»®£¡
 pause 
 cls
 goto main
@@ -162,29 +169,25 @@ exit
 
 :kidding 
 cls
-echo è¯·è¾“å…¥å¯†ç 
+echo ÇëÊäÈëÃÜÂë
 set /p scan=
 echo r u sure
 pause 
-echo ç®—äº†ï¼Œåæ­£æˆ‘ä¹Ÿä¸ä¼šç»™ä½ åæ‚”çš„æœºä¼šäº†ï¼Œå•¦å•¦å•¦ï¼ï¼ï¼
+echo ËãÁË£¬·´ÕıÎÒÒ²²»»á¸øÄã·´»ÚµÄ»ú»áÁË£¬À²À²À²£¡£¡£¡
 pause 
-echo å“ˆå“ˆï¼éª—ä½ çš„ï¼
+echo ¹ş¹ş£¡Æ­ÄãµÄ£¡
 pause 
-echo ä½ ä»¥ä¸ºæˆ‘ä¼šæŠŠç«‹å³é‡å¯æ”¾åœ¨è¿™ä¹ˆæ˜æ˜¾çš„ä½ç½®ä¹ˆï¼Ÿæ„šè ¢çš„äººç±»ï¼
+echo ÄãÒÔÎªÎÒ»á°ÑÁ¢¼´ÖØÆô·ÅÔÚÕâÃ´Ã÷ÏÔµÄÎ»ÖÃÃ´£¿ÓŞ´ÀµÄÈËÀà£¡
 pause 
 cls
-goto main
-pause 
-exit 
+goto main 
 
 :code 
 cls
 type D:\BAT.dat
 pause
 cls
-goto main
-pause 
-exit 
+goto main 
 
 
 :bing 
@@ -197,60 +200,137 @@ for /r  D:\Bing_pho\%date:~2,2%.%date:~5,2%.%date:~8,2%\ %%i in (*.*) do (
     set /a n+=1
     ren "%%i" !n!%%~xi.jpg
  )
-::pause
-cd D:\Bing_pho\%date:~2,2%.%date:~5,2%.%date:~8,2%\
-pause
+set n=
 cls
-echo å¿…åº”èšç„¦é”å±å£çº¸å·²ä¿å­˜å®Œæ¯•ï¼Œè¯·æ‰‹åŠ¨åˆ é™¤å¹²æ‰°é¡¹å†æ¬¡è¿è¡Œç¨‹åºï¼
+echo ±ØÓ¦¾Û½¹ËøÆÁ±ÚÖ½ÒÑ±£´æÍê±Ï£¬ÇëÊÖ¶¯É¾³ı¸ÉÈÅÏîÔÙ´ÎÅÅĞò£¡
+start D:\Bing_pho\%date:~2,2%.%date:~5,2%.%date:~8,2%\
 pause
 cls
 goto main
-pause 
-exit
+
 
 :order 
 cls
+set n=
+set /p pre=ÇëÊäÈëÇ°×º£º
 ::pause
 ::rd/s/q D:\Bing_pho\%date:~2,2%.%date:~5,2%.%date:~8,2%\
 ::Xcopy C:\Users\Bruce\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets D:\Bing_pho\%date:~2,2%.%date:~5,2%.%date:~8,2%\/e
 setlocal enabledelayedexpansion
-for /r  D:\Bing_pho\%date:~2,2%.%date:~5,2%.%date:~8,2%\ %%i in (*.*) do (
+for /r  D:\Bing_pho\%date:~2,2%.%date:~5,2%.%date:~8,2%\ %%j in (*.*) do (
     set /a n+=1
-    ren "%%i" 0!n!%%~xi
+    ren "%%j" %pre%!n!%%~xj
  )
 ::pause
 cd D:\Bing_pho\%date:~2,2%.%date:~5,2%.%date:~8,2%\
 pause
 cls
 goto main
-pause 
-exit
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :temp_bkup
-echo æ­£åœ¨å¼€å§‹ä¸´æ—¶å¤‡ä»½
+echo ÕıÔÚ¿ªÊ¼ÁÙÊ±±¸·İ
 pause
 rd/s/q "E:\360 Cloud Drive\BT Download\Temp_Backup\"
 ::pause
 Xcopy %~d0 "E:\360 Cloud Drive\BT Download\Temp_Backup\Desktop\"/e
 Xcopy D:\Data "E:\360 Cloud Drive\BT Download\Temp_Backup\Data Backup\"/e
 Xcopy D:\*.dat "E:\360 Cloud Drive\BT Download\Temp_Backup\Data Backup\DBackup\"
+start "" "E:\360 Cloud Drive\BT Download\Temp_Backup\"
 pause
 goto main
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:alpha
+:exprb
 cls
-echo å»ºè®¾ä¸­ã€‚ã€‚ã€‚
-echo æ•¬è¯·æœŸå¾… 
-pause
+echo ÖØÆô×ÊÔ´¹ÜÀíÆ÷£¿
+::pause
+echo.
+echo Killing the explorer.exe process....
+echo.
+taskkill /f /im explorer.exe
+echo.
+echo.
+echo.
+echo Waiting to restart explorer.exe.....
+start explorer.exe
+echo.
+echo.
+echo explorer.exe has been restarted.wait for exit
+::pause
+cls
+goto main 
+
+
+:taskmgr
+cls
+taskkill /f /im explorer.exe
+start explorer.exe
+taskkill /f /im taskmgr.exe
+start taskmgr.exe
 cls
 goto main
-pause 
-exit 
 
 
+:bravo
+set /p bravo=
+if "%bravo%"=="main" goto main 
+if "%bravo%"=="order" goto order
+if "%bravo%"=="od" goto order
+if "%bravo%"=="exprb" goto exprb
+if "%bravo%"=="hell" goto taskmgr
+if "%bravo%"=="tkrb" goto taskmgr
+if "%bravo%"=="cmd" cmd
+if "%bravo%"=="CMD" cmd
+if "%bravo%"=="reboot" shutdown -r -t 0
+if "%bravo%"=="rb" shutdown -r -t 0
+if "%bravo%"=="shutdown" shutdown -s -t 0
+if "%bravo%"=="sd" shutdown -s -t 0
+if "%bravo%"=="utkl" taskkill /f /im uTorrent.exe 
+if "%bravo%"=="ut" start "" "E:\360 Cloud Drive\BT Download\SHU-BT Download\utorrent\uTorrent.exe"
+%bravo%
+goto¡¡bravo
+
+
+:prgm
+cls
+echo #######################
+echo #    0 ·µ»Ø           #
+echo #    1 lantern        #
+echo #    2 uTorrent       #
+echo #    3 uTorrent ÖØÆô  #
+echo #    4 Öú½Ì           #
+echo #    5 CMD            #
+echo #    6 else¡£¡£¡£     #
+echo #######################
+echo copyright@ Bruce Wangne
+echo mail:qi.wang@outlook.ie
+set /p input=ÇëÊäÈë´úÂë£º 
+if "%input%"=="0" goto main 
+if "%input%"=="1" start "" "C:\Users\Bruce\AppData\Roaming\Lantern\lantern.exe"
+if "%input%"=="2" start "" "E:\360 Cloud Drive\BT Download\SHU-BT Download\utorrent\uTorrent.exe"
+
+if "%input%"=="3" (taskkill /f /im uTorrent.exe & start "" "E:\360 Cloud Drive\BT Download\SHU-BT Download\utorrent\uTorrent.exe" & pause)
+ 
+if "%input%"=="4" start "" "E:\360 Cloud Drive\·õµ°er\¿Î³Ì\V\Öú½Ì"
+if "%input%"=="5" start cmd
+if "%input%"=="6" goto bravo
+if "%input%"=="order" goto order
+if "%input%"=="od" goto order
+if "%input%"=="exprb" goto exprb
+if "%input%"=="hell" goto taskmgr
+if "%input%"=="tkrb" goto taskmgr
+if "%input%"=="cmd" cmd
+if "%input%"=="CMD" cmd
+if "%input%"=="reboot" shutdown -r -t 0
+if "%input%"=="rb" shutdown -r -t 0
+if "%input%"=="shutdown" shutdown -s -t 0
+if "%input%"=="sd" shutdown -s -t 0
+if "%input%"=="ut" start "" "E:\360 Cloud Drive\BT Download\SHU-BT Download\utorrent\uTorrent.exe"
+if "%input%"=="utkl" taskkill /f /im uTorrent.exe 
+::pause
+goto prgm
 
 
